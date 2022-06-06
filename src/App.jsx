@@ -61,8 +61,9 @@ function App() {
       <div>
        {items.map((elem) => {
         return <div key={elem.id} className="d2" >
-        {elem.completed === true ? <div className='green'>{elem.id}</div> : <div className='red'>{elem.id}</div>}  
-         <div style={{fontSize:"18px", fontWeight:"bolder"}}>{elem.title}</div>
+        
+         <div style={{fontSize:"18px", fontWeight:"bolder"}}>{elem.first_name}</div>
+         <div style={{fontSize:"18px", fontWeight:"bolder"}}>{elem.last_name}</div>
         
         </div>
       })}
